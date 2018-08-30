@@ -17,5 +17,8 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/falehenrique/jexia/issues"
+  },
+  "dependencies": {
+    "https": "^1.0.0"
   }
 }
