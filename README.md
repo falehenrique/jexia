@@ -4,4 +4,14 @@
 - npm install
 
 ## To Test
-- npm exec {param} 
+- npm start {param} 
+- example: ``npm start Uhura``
+
+## About the structure of project
+**index** - Here there is the simple call to layer controller
+
+**controller** - Here we have the basic rules of the project
+
+**api** - Here is where we call the api stapi
+
+**util** - Here is we have a utilities functions about the project

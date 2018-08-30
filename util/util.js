@@ -3,12 +3,11 @@ let alphabetRegex = new RegExp(alphabet.slice().reverse().join('|') + '|\\d', 'i
 let HEXA_SPACE = ' 0x0020';
 let HEXA_NUMBER = 0xF8F0;
 let HEXA_LETTER = 0xF8D0;
+
 module.exports = {
-        HEXA_SPACE,
-        HEXA_NUMBER,
-        HEXA_LETTER,
-    },
-module.exports = {
+    HEXA_SPACE,
+    HEXA_NUMBER,
+    HEXA_LETTER,
     //exercise 3
     //You might notice that
     //some letters are missing which means they are not translatable for this test
@@ -17,7 +16,6 @@ module.exports = {
         let paramText = param.replace(' ', '');
         let paramTextMatch = paramText.match(alphabetRegex);
         if ((paramTextMatch == null) || (paramTextMatch.length != paramText.length)) {
-            console.info("entrou aqui no retorno");
             return false;
         }
         return true;
